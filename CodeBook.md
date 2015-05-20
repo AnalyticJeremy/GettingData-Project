@@ -2,13 +2,13 @@
 
 The following table describes all of the variables in each observation of the tidy dataset.  Each observation has 68 variables.
 
-The dataset contains the means of different accelerometer readings for each subject in the experiment as he or she conducted different activities.  The first two variables ("subject_id" and "activity_label") identify the subject and activity.  The remaining 66 variables contain the means of the readings.
+The dataset contains the means of different accelerometer readings for each subject in the experiment as he or she conducted different activities.  The first two variables ("subject_id" and "activity_label") in each observation identify the subject and activity.  The remaining 66 variables contain the means of the readings.
 
 Note that in the original data, all of the accelerometer readings have been normalized to be between -1 and +1.  Thus, in our output, the means of these readings will also fall within that same range.
 
 Column<br>Number|Column<br>Name|Data<br>Type|Description
 -----|----|---------|-----------
-1|subject_id|integer|the ID of the subject performing the activity (ranges from 1 - 30)
+1|subject_id|integer|a number that identifies the subject performing the activity (ranges from 1 - 30)
 2|activity_label|character|a description of the activity being measured;  will be one of:  "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS"
 3|tBodyAcc-mean()-X|numeric|the mean of the "tBodyAcc-mean()-X" reading from the original data for the specified subject while performing the specified activity
 4|tBodyAcc-mean()-Y|numeric|the mean of the "tBodyAcc-mean()-Y" reading from the original data for the specified subject while performing the specified activity
