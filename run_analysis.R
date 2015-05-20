@@ -160,3 +160,9 @@ df <- select(df, (colCount - 2), colCount, 1:(colCount-3))
 # remaining 66 columns, compute the mean for that subject/activity grouping.
 tidy.df <- group_by(df, subject_id, activity_label) %>%
               summarise_each(funs(mean))
+
+# And that's all.  We now have a tidy dataset stored in the "tidy.df" variable.
+# From here, it can be used to do further analysis or exported to a text
+# file and shared with others.
+#
+# END
